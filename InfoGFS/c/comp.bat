@@ -1,0 +1,1 @@
+gcc -o ../static/data/main.exe main.c

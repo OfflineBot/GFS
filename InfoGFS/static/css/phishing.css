@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --border-color: #cdcdcd;
+    --link-color: #444;
+    --link-size: 15px;
+}
+
+h2, p, input, button, form {
+    background-color: white;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.head {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+input {
+    font-size: 15px;
+    margin-top: 10px;
+    height: 40px;
+}
+
+.google-input {
+    border: 1px solid var(--border-color);
+}
+.google-input:focus {
+    outline: #4285F4 solid 2px;
+    box-shadow: 0 0 3px #4285F4;
+}
+
+button {
+    width: 100px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+p {
+    font-size: 15px;
+}
+
+#lower-bar {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+#white-btn {
+    color: white;
+    background-color: #4285F4;
+    font-size: 15px;
+    margin-left: auto;
+    border: none;
+    height: 40px;
+    width: 70px;
+
+}
+#white-btn:hover {
+    background-color: #3872d0;
+}
+#white-btn:focus {
+    background-color: #275196;
+}
+
+form {
+    width: 350px;
+    padding: 60px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.center {
+    background-color: white;
+    color: black;
+}
+
+.blue-l {
+    color: #4285F4;
+}
+.red-l {
+    color: #DB4437;
+}
+.yellow-l {
+    color: #F4B400;
+}
+.green-l {
+    color: #0F9D58;
+}
+
+.logo {
+    margin-left: -1px;
+}
+
+
+
+.blue-text {
+    color: #4285F4;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#box {
+    border: 2px solid #5d5d5d;
+    border-radius: 2px;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+#show-pass {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+#small-text {
+    font-size: 14px;
+}
+
+#info-text {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#google-error {
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#google-info {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lower-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 6px;
+}
+
+.lower-link-color {
+    color: #444;
+    font-size: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#terms {
+    margin-left: 30px;
+}
+#privacy {
+    margin-left: 30px;
+}
+#help {
+    margin-left: 170px;
+}

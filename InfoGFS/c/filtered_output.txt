@@ -1,0 +1,154 @@
+D$ A
+f=MZt
+UWVSH
+l$ H
+)E H
+t$ I
+(E H
+l$0H
+T$ M
+D$ H
+ =CCG u
+f=MZt
+QPH=
+T$ A
+\$ A
+\$ A
+T$ A
+T$ A
+zuzuzuzuzu
+Enter the password: 
+Argument domain error (DOMAIN)
+Argument singularity (SIGN)
+Overflow range error (OVERFLOW)
+Partial loss of significance (PLOSS)
+Total loss of significance (TLOSS)
+The result is too small to be represented (UNDERFLOW)
+Unknown error
+DeleteCriticalSection
+EnterCriticalSection
+FreeLibrary
+GetLastError
+GetModuleHandleA
+GetProcAddress
+InitializeCriticalSection
+LeaveCriticalSection
+LoadLibraryA
+SetUnhandledExceptionFilter
+Sleep
+TlsGetValue
+VirtualProtect
+VirtualQuery
+calloc
+free
+malloc
+memcpy
+abort
+exit
+signal
+fwrite
+puts
+strcmp
+strlen
+strncmp
+char
+long long unsigned int
+long long int
+short unsigned int
+long int
+unsigned int
+long double
+unsigned char
+double
+float
+long unsigned int
+short int
+signed char
+complex float
+complex double
+complex long double
+""gY0uKgg0=L""
+argc
+argv
+envp
+argret
+mainret
+atexit
+main
+fpreset
+fake
+vfprintf
+scanf
+printf
+fprintf
+tzset
+fake
+hname
+fthunk
+fake
+fake
+hname
+fthunk
+fake
+fake
+hname
+fthunk
+fake
+fake
+hname
+fthunk
+fake
+fake
+hname
+fthunk
+fake
+fake
+hname
+fthunk
+fake
+fake
+hname
+fthunk
+fake
+fake
+hname
+fthunk
+fake
+fake
+hname
+fthunk
+fake
+memcpy
+puts
+malloc
+abort
+calloc
+Sleep
+signal
+strncmp
+strcmp
+fwrite
+exit
+strlen
+free
+managedapp
+startinfo
+WinMainCRTStartup
+mainCRTStartup
+authenticate
+initialized
+maxSections
+stUserMathErr
+SetUnhandledExceptionFilter
+GetLastError
+VirtualQuery
+TlsGetValue
+LoadLibraryA
+VirtualProtect
+EnterCriticalSection
+GetModuleHandleA
+InitializeCriticalSection
+GetProcAddress
+LeaveCriticalSection
+FreeLibrary
+DeleteCriticalSection

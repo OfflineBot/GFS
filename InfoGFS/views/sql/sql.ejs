@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/sql.css">
+    <script src="/js/sql.js" defer></script>
+    <title>SQL Main</title>
+</head>
+<body>
+
+    <%- include('../presets/header') %>
+
+    <div class="center">
+        <form action="" method="post">
+            <h1>SQL Injection</h1>
+            <input type="text" name="name" id="name" placeholder="Enter Name" autocomplete="off">
+            <input type="password" name="password" id="password" placeholder="Enter Password" autocomplete="off">
+            <button type="submit" id="btn">Log In</button>
+        </form> 
+        <p id="sql-info">Current SQL:</p>
+        <p id="sql-key"></p>
+    </div>
+
+</body>
+</html>

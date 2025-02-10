@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <title>Dictonary Attack</title>
+</head>
+<body>
+
+    <%- include("../presets/header") %>
+
+    <div class="center">
+
+        <div class="file-link">
+            <a href="/data/dictonary.py" download class="download-link">Get Script</a>
+            <a href="/data/word_list.txt" download class="download-link">Get word list</a>
+        </div>
+        <form action="" method="post">
+            <h1>Dictonary Attack</h1> 
+            <input type="text" placeholder="Enter Password" autocomplete="off" id="password" name="password">
+            <button type="submit">Enter</button>
+        </form>
+    </div>
+</body>
+</html>

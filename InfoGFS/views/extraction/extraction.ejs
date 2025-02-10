@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <title>EXE Editor</title>
+</head>
+<body>
+    
+    <%- include("../presets/header") %>
+
+    <div class="center">
+        <div class="file-link">
+            <a href="/data/main.exe" download class="download-link">Get main.exe</a>
+            <a href="/data/filter.py" download class="download-link">Get filter script</a>
+        </div>
+        <form action="" method="post">
+            <input type="text" name="password" id="password" placeholder="Enter Password">
+            <button type="submit">Enter</button>
+        </form>
+    </div>
+
+</body>
+</html>

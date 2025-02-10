@@ -1,0 +1,1 @@
+strings.exe main.exe > string_output.txt
