@@ -9,10 +9,10 @@ router.get("/", (req, res) => {
 router.post("/", (req, res) => {
     const input = req.body.password 
     const target = "secretPassword"
-    if (input === target) {
+    if (input !== target) {
         return res.redirect('/extraction/')
     } else {
-        cookie_level(req, res, 4)
+        cookie_level(req, res, 3)
         return res.redirect('/extraction/done')
     }
 })

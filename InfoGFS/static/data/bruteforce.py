@@ -1,40 +1,32 @@
-import requests
+# Passwort (Eigentlich Versteckt)
+password = bytes([97, 115, 100, 102])
 
-max_length = 4
-target_item = 'asdf'
-url = "http://localhost:8000/bruteforce"
-default_answer = "http://localhost:8000/bruteforce"
+# Alle Möglichkeiten
+chars = "abcdefghijklmnopqrstuvwxyz0123456789"
 
+# Brute-force Funktion
+def brute_force(password):
+    target = password.decode()
+    attempt = [chars[0]] * len(target)
+    
+    while True:
+        # Aktuellen Versucht in der Konsole Anzeigen lassen. 
+        print(",".join(attempt).split(','))
 
-# charset
-char_list = [
-    #'ä', 'ö', 'ü', 'Ä', 'Ö', 'Ü',
-    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 
-    #'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 
-    's', 
-    #'t', 'u', 'v', 'w', 'x', 'y', 'z',
-    #'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
-    #'1', '2', '3', '4', '5', '6', '7', '8', '9', '0',
-    ]
+        # Wenn das aktuelle Versuchspasswort dem echten Passwort entspricht
+        if "".join(attempt) == target:
+            print("Password found:", target)
+            return
+        
+        # Erhöht Versuch (Iteriert duch Variable: chars)
+        i = len(attempt) - 1
+        while i >= 0:
+            index = chars.index(attempt[i])
+            if index < len(chars) - 1:
+                attempt[i] = chars[index + 1]
+                break
+            else:
+                attempt[i] = chars[0]
+                i -= 1
 
-def generate_permutations(characters, n, prefix="", target=""):
-
-    if len(prefix) == n:
-        response = requests.post(url, data={"password": prefix}, allow_redirects=True).url
-        if response != default_answer:
-            print("Found password:", prefix)
-            return True
-
-        else:
-            print(prefix)
-            return False 
-
-    for char in characters:
-        new_prefix = prefix + char
-        if generate_permutations(characters, n, new_prefix, target):
-            return True
-
-    return False
-
-for length in range(1, max_length + 1):
-    generate_permutations(char_list, length, target=target_item)
+brute_force(password)

@@ -15,7 +15,7 @@ router.get("/bruteforce", (req, res) => {
 router.post("/bruteforce", (req, res) => {
     const current_password = 'asdf'
     const pass = req.body.password
-    if (current_password == pass) {
+    if (current_password === pass) {
         cookie_level(req, res, 2)
         return res.redirect("/password/bruteforce/done")
     } else {
