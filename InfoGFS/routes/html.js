@@ -13,7 +13,7 @@ router.post("/", (req, res) => {
 })
 
 router.get("/done", (req, res) => {
-    res.render("done", {message: "You have finsihed the first task!"})
+    res.render("done", {message: "1. Aufgabe fertig!"})
 })
 
 

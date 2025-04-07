@@ -26,7 +26,7 @@ router.post("/bruteforce", (req, res) => {
 })
 
 router.get("/bruteforce/done", (req, res) => {
-    res.render("done", {message: "You have finished the second task!"})
+    res.render("done", {message: "2. Aufgabe fertig (Schau die andere Version noch an falls noch nicht bearbeitet)!"})
 })
 
 router.get("/dictonary", (req, res) => {
@@ -34,7 +34,7 @@ router.get("/dictonary", (req, res) => {
 })
 
 router.post("/dictonary", (req, res) => {
-    const current_password = '1234'
+    const current_password = 'asdf'
     const pass = req.body.password
     if (current_password == pass) {
         cookie_level(req, res, 2)
@@ -44,7 +44,7 @@ router.post("/dictonary", (req, res) => {
     }
 })
 router.get("/dictonary/done", (req, res) => {
-    res.render("done", {message: "You have finsiehd the second task!"})
+    res.render("done", {message: "2. Aufgabe fertig (Schau die andere Version noch an falls noch nicht bearbeitet)!"})
 })
 
 module.exports = router

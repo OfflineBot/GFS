@@ -84,3 +84,10 @@ button:focus {
 .file-link {
     margin-bottom: 20px;
 }
+
+
+.infos {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}

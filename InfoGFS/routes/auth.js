@@ -1,4 +1,5 @@
 const express = require('express'), router = express.Router()
+const cookie_level = require('../scripts/cookie_checker.js')
 
 const auth = (req, res, next) => {
     let auth_var = req.cookies.is_auth
@@ -10,7 +11,9 @@ const auth = (req, res, next) => {
 }
 
 router.get("/", auth, (req, res) => {
-    res.render("done", {message: "You have finished the last task!"})
+
+    cookie_level(req, res, 4)
+    res.render("done", {message: "4. Aufgabe fertig!"})
 })
 
 router.get("/no-access", (req, res) => {

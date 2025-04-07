@@ -18,7 +18,7 @@ router.post("/", (req, res) => {
 })
 
 router.get("/done", (req, res) => {
-    res.render("done", {message: "You have finished the fifth task!"})
+    res.render("done", {message: "3. Aufgabe fertig!"})
 })
 
 module.exports = router
